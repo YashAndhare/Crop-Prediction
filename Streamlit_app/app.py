@@ -1,10 +1,9 @@
 import streamlit as st
 import pickle
+import os
 import numpy as np
 
 # Load trained model
-import os
-import pickle
 
 model_path = os.path.join(os.path.dirname(__file__), "rf_model.pkl")
 model = pickle.load(open(model_path, "rb"))
