@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Prediction System</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🌾 Crop Prediction</h1>
+    <p style="font-size: 14px; margin-bottom: 20px;">
+        Enter soil and environmental details to get the best crop recommendation
+    </p>
+
+    <form action="/predict" method="post">
+
+        <input type="number" step="any" name="Nitrogen" placeholder="Nitrogen (N)" required>
+        <input type="number" step="any" name="Phosphorus" placeholder="Phosphorus (P)" required>
+        <input type="number" step="any" name="Potassium" placeholder="Potassium (K)" required>
+
+        <input type="number" step="any" name="Temperature" placeholder="Temperature (°C)" required>
+        <input type="number" step="any" name="Humidity" placeholder="Humidity (%)" required>
+
+        <input type="number" step="any" name="pH" placeholder="pH Value" required>
+        <input type="number" step="any" name="Rainfall" placeholder="Rainfall (mm)" required>
+
+        <button type="submit">🌱 Predict Crop</button>
+    </form>
+
+    {% if prediction_text %}
+        <h2>{{ prediction_text }}</h2>
+    {% endif %}
+
+</div>
+
+</body>
+</html>
