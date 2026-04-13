@@ -3,7 +3,11 @@ import pickle
 import numpy as np
 
 # Load trained model
-model = pickle.load(open('rf_model.pkl', 'rb'))
+import os
+import pickle
+
+model_path = os.path.join(os.path.dirname(__file__), "rf_model.pkl")
+model = pickle.load(open(model_path, "rb"))
 
 # Title
 st.set_page_config(page_title="Crop Prediction", layout="centered")
