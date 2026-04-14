@@ -2,7 +2,7 @@
 
 ## 📌 Overview
 
-This project is a Machine Learning-based web application that predicts the most suitable crop based on soil nutrients and environmental conditions. It helps in making smart agricultural decisions using data-driven insights.
+This project is a Machine Learning-based web application that predicts the most suitable crop based on soil nutrients and environmental conditions. It helps in making smart agricultural decisions using data-driven insights
 
 ---
 
