@@ -66,13 +66,6 @@ This project is a Machine Learning-based web application that predicts the most 
 
 ---
 
-## 👨‍💻 Author
-
-**Yash Andhare**
-Aspiring Data Scientist | MCA Student
-
----
-
 ## ⭐ Conclusion
 
 This project showcases an end-to-end Machine Learning pipeline from data preprocessing to deployment, making it a practical solution for smart agriculture.
